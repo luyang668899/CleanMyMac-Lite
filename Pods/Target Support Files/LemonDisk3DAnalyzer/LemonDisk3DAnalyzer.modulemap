@@ -1,0 +1,6 @@
+framework module LemonDisk3DAnalyzer {
+  umbrella header "LemonDisk3DAnalyzer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -33,17 +33,9 @@
     "FMDB": [
       "2.7.5"
     ],
-    "QMUICommon": [
-
-    ],
-    "QMCoreFunction": [
-
-    ],
-    "LemonStat": [
-
-    ],
-    "LemonFileManager": [
-
-    ]
+    "QMUICommon": [],
+    "QMCoreFunction": [],
+    "LemonStat": [],
+    "LemonFileManager": []
   }
 }

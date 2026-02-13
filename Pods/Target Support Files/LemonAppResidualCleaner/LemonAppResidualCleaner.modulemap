@@ -1,0 +1,6 @@
+framework module LemonAppResidualCleaner {
+  umbrella header "LemonAppResidualCleaner-umbrella.h"
+
+  export *
+  module * { export * }
+}

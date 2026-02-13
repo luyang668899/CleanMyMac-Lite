@@ -1,0 +1,26 @@
+{
+  "name": "LemonMemoryOptimize",
+  "version": "0.1.0",
+  "summary": "智能内存优化模块",
+  "description": "智能内存优化模块，提供内存监控、智能内存释放等功能",
+  "homepage": "https://lemon.qq.com",
+  "license": "GPL",
+  "authors": {
+    "Tencent": "lemon@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "LemonMemoryOptimize/Classes/**/*",
+  "frameworks": [
+    "Foundation",
+    "AppKit"
+  ],
+  "dependencies": {
+    "QMCoreFunction": [],
+    "LemonStat": []
+  }
+}

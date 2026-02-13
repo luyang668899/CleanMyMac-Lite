@@ -1,0 +1,25 @@
+{
+  "name": "LemonCacheCleaner",
+  "version": "1.0.0",
+  "summary": "Cache cleaner for Tencent Lemon Cleaner",
+  "description": "A powerful cache cleaner module for Tencent Lemon Cleaner, \nwhich can scan, analyze and safely clean cache files on macOS.",
+  "homepage": "https://github.com/Tencent/Lemon-Cleaner",
+  "license": {
+    "type": "GPL v3",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tencent": "support@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.10"
+  },
+  "source": {
+    "git": "https://github.com/Tencent/Lemon-Cleaner.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "LemonCacheCleaner/Classes/**/*",
+  "public_header_files": "LemonCacheCleaner/Classes/**/*.h",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}

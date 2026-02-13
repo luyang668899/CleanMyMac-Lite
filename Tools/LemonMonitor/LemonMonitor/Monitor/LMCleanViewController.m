@@ -26,6 +26,7 @@
 #import <QMUICommon/LMAppThemeHelper.h>
 
 #import "LMTrashSizeCheckWindowController.h"
+#import <LemonMemoryOptimize/LMMemoryOptimizer.h>
 
 /*
  刷新UI的原因:
@@ -137,12 +138,18 @@ NSNotificationName LMCleanViewWillDisappearNotificaiton =  @"LMCleanViewWillDisa
     [self refreshProcMemUIWithInfo:nil mode:kREFRESH_MODE_SHOW];
 
     [[LemonMonitroHelpParams sharedInstance] startStatMemory];
+    
+    // 启动智能内存优化监控
+    [[LMMemoryOptimizer sharedInstance] startMonitoring];
 }
 - (void)viewWillDisappear
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:LMCleanViewWillDisappearNotificaiton object:nil];
     [super viewWillDisappear];
     [[LemonMonitroHelpParams sharedInstance] stopStatMemory];
+    
+    // 停止智能内存优化监控
+    [[LMMemoryOptimizer sharedInstance] stopMonitoring];
 }
 
 - (void)changeTrashViewState
@@ -1006,11 +1013,11 @@ NSNotificationName LMCleanViewWillDisappearNotificaiton =  @"LMCleanViewWillDisa
     NSArray *beforeSizeArray = [[McMonitorFuction sharedFuction] memoryStateInfo][@"SizeArray"];
     uint64_t startUsedSize = [beforeSizeArray[4] unsignedLongLongValue] - [beforeSizeArray[5] unsignedLongLongValue];
     
-    // purge RAM
-    dispatch_async(kQMDEFAULT_GLOBAL_QUEUE, ^{
-        [QMPurgeRAM purge];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
+    // 使用智能内存优化
+    dispatch_async(kQMDEFAULT_GLOBAL_QUEUE, ^{        // 触发智能内存优化
+        uint64_t purgeSize = [[LMMemoryOptimizer sharedInstance] optimizeMemory];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{            
             //释放后记录内存值
             NSArray *afterSizeArray = [[McMonitorFuction sharedFuction] memoryStateInfo][@"SizeArray"];
             uint64_t totalSize = [afterSizeArray[4] unsignedLongLongValue];
@@ -1018,10 +1025,13 @@ NSNotificationName LMCleanViewWillDisappearNotificaiton =  @"LMCleanViewWillDisa
             
             NSLog(@"%s, total:%.2fGB before used:%.2fGB end used:%.2fGB,  %llu,  %llu", __FUNCTION__, totalSize/1024.0/1024/1024, startUsedSize/1024.0/1024/1024, endUsedSize/1024.0/1024/1024, startUsedSize, endUsedSize);
             
-            uint64_t purgeSize = (startUsedSize>endUsedSize) ? (startUsedSize-endUsedSize) : 0;
+            // 使用智能优化返回的释放大小
+            if (purgeSize == 0) {
+                purgeSize = (startUsedSize>endUsedSize) ? (startUsedSize-endUsedSize) : 0;
+            }
+            
             [self showMemCleanedView:YES :purgeSize :totalSize];
-            dispatch_async(kQMDEFAULT_GLOBAL_QUEUE, ^{
-                sleep(3);
+            dispatch_async(kQMDEFAULT_GLOBAL_QUEUE, ^{                sleep(3);
                 bActionMemCleaning = NO;
             });
         });

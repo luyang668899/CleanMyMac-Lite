@@ -23,18 +23,12 @@
     "LemonLoginItemManager/Assets/**/*"
   ],
   "dependencies": {
-    "QMAppLoginItemManage": [
-
-    ],
+    "QMAppLoginItemManage": [],
     "AFNetworking": [
       "~> 3.2.1"
     ],
-    "QMUICommon": [
-
-    ],
-    "QMCoreFunction": [
-
-    ],
+    "QMUICommon": [],
+    "QMCoreFunction": [],
     "Masonry": [
       "1.1.0"
     ],

@@ -1,0 +1,6 @@
+framework module LemonDuplicateFileCleaner {
+  umbrella header "LemonDuplicateFileCleaner-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "LemonBigFileCleaner",
+  "version": "1.0.0",
+  "summary": "Large file cleaner for Tencent Lemon Cleaner",
+  "description": "A powerful large file cleaner module for Tencent Lemon Cleaner, \nwhich can scan, analyze and safely delete large files on macOS.",
+  "homepage": "https://github.com/Tencent/Lemon-Cleaner",
+  "license": {
+    "type": "GPL v3",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tencent": "support@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.10"
+  },
+  "source": {
+    "git": "https://github.com/Tencent/Lemon-Cleaner.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "LemonBigFileCleaner/Classes/**/*",
+  "public_header_files": "LemonBigFileCleaner/Classes/**/*.h",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}

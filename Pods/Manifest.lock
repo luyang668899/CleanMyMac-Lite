@@ -15,12 +15,17 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - LemonAppResidualCleaner (1.0.0)
+  - LemonBigFileCleaner (1.0.0)
   - LemonBigOldFile (0.1.0):
     - AFNetworking (= 3.2.1)
     - LemonFileManager
     - Masonry (= 1.1.0)
     - QMCoreFunction
     - QMUICommon
+  - LemonCacheCleaner (1.0.0)
+  - LemonDisk3DAnalyzer (0.1.0):
+    - QMCoreFunction
   - LemonDuplicateFile (0.1.0):
     - AFNetworking (= 3.2.1)
     - FMDB (= 2.7.5)
@@ -29,6 +34,7 @@ PODS:
     - Masonry (= 1.1.0)
     - QMCoreFunction
     - QMUICommon
+  - LemonDuplicateFileCleaner (1.0.0)
   - LemonFileManager (0.1.0):
     - QMCoreFunction
   - LemonFileMove (0.1.0):
@@ -41,6 +47,7 @@ PODS:
     - Masonry (~> 1.1.0)
     - QMCoreFunction
     - QMUICommon
+  - LemonLogCleaner (1.0.0)
   - LemonLoginItemManager (0.1.0):
     - AFNetworking (~> 3.2.1)
     - FMDB (= 2.7.5)
@@ -48,6 +55,12 @@ PODS:
     - QMAppLoginItemManage
     - QMCoreFunction
     - QMUICommon
+  - LemonLoginItemOptimizer (0.1.0):
+    - QMAppLoginItemManage
+    - QMCoreFunction
+  - LemonMemoryOptimize (0.1.0):
+    - LemonStat
+    - QMCoreFunction
   - LemonNetSpeed (0.1.0):
     - AFNetworking (= 3.2.1)
     - LemonStat
@@ -75,6 +88,9 @@ PODS:
     - QMUICommon
     - YMTreeMap (= 1.2.0)
   - LemonStat (0.1.0)
+  - LemonSystemCleaner (0.1.0):
+    - QMCoreFunction
+  - LemonTempFileCleaner (1.0.0)
   - LemonUninstaller (0.1.0):
     - AFNetworking (= 3.2.1)
     - FMDB (= 2.7.5)
@@ -95,17 +111,27 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
   - FMDB (= 2.7.5)
+  - LemonAppResidualCleaner (from `./localPod/LemonAppResidualCleaner`)
+  - LemonBigFileCleaner (from `./localPod/LemonBigFileCleaner`)
   - LemonBigOldFile (from `./localPod/LemonBigOldFile`)
+  - LemonCacheCleaner (from `./localPod/LemonCacheCleaner`)
+  - LemonDisk3DAnalyzer (from `./localPod/LemonDisk3DAnalyzer`)
   - LemonDuplicateFile (from `./localPod/LemonDuplicateFile`)
+  - LemonDuplicateFileCleaner (from `./localPod/LemonDuplicateFileCleaner`)
   - LemonFileManager (from `./localPod/LemonFileManager`)
   - LemonFileMove (from `./localPod/LemonFileMove`)
   - LemonHardware (from `./localPod/LemonHardware`)
+  - LemonLogCleaner (from `./localPod/LemonLogCleaner`)
   - LemonLoginItemManager (from `./localPod/LemonLoginItemManager`)
+  - LemonLoginItemOptimizer (from `./localPod/LemonLoginItemOptimizer`)
+  - LemonMemoryOptimize (from `./localPod/LemonMemoryOptimize`)
   - LemonNetSpeed (from `./localPod/LemonNetSpeed`)
   - LemonPhotoClean (from `./localPod/LemonPhotoClean`)
   - LemonPrivacyClean (from `./localPod/LemonPrivacyClean`)
   - LemonSpaceAnalyse (from `./localPod/LemonSpaceAnalyse`)
   - LemonStat (from `./localPod/LemonStat`)
+  - LemonSystemCleaner (from `./localPod/LemonSystemCleaner`)
+  - LemonTempFileCleaner (from `./localPod/LemonTempFileCleaner`)
   - LemonUninstaller (from `./localPod/LemonUninstaller`)
   - Masonry (= 1.1.0)
   - QMAppLoginItemManage (from `./localPod/QMAppLoginItemManage`)
@@ -120,18 +146,34 @@ SPEC REPOS:
     - YMTreeMap
 
 EXTERNAL SOURCES:
+  LemonAppResidualCleaner:
+    :path: "./localPod/LemonAppResidualCleaner"
+  LemonBigFileCleaner:
+    :path: "./localPod/LemonBigFileCleaner"
   LemonBigOldFile:
     :path: "./localPod/LemonBigOldFile"
+  LemonCacheCleaner:
+    :path: "./localPod/LemonCacheCleaner"
+  LemonDisk3DAnalyzer:
+    :path: "./localPod/LemonDisk3DAnalyzer"
   LemonDuplicateFile:
     :path: "./localPod/LemonDuplicateFile"
+  LemonDuplicateFileCleaner:
+    :path: "./localPod/LemonDuplicateFileCleaner"
   LemonFileManager:
     :path: "./localPod/LemonFileManager"
   LemonFileMove:
     :path: "./localPod/LemonFileMove"
   LemonHardware:
     :path: "./localPod/LemonHardware"
+  LemonLogCleaner:
+    :path: "./localPod/LemonLogCleaner"
   LemonLoginItemManager:
     :path: "./localPod/LemonLoginItemManager"
+  LemonLoginItemOptimizer:
+    :path: "./localPod/LemonLoginItemOptimizer"
+  LemonMemoryOptimize:
+    :path: "./localPod/LemonMemoryOptimize"
   LemonNetSpeed:
     :path: "./localPod/LemonNetSpeed"
   LemonPhotoClean:
@@ -142,6 +184,10 @@ EXTERNAL SOURCES:
     :path: "./localPod/LemonSpaceAnalyse"
   LemonStat:
     :path: "./localPod/LemonStat"
+  LemonSystemCleaner:
+    :path: "./localPod/LemonSystemCleaner"
+  LemonTempFileCleaner:
+    :path: "./localPod/LemonTempFileCleaner"
   LemonUninstaller:
     :path: "./localPod/LemonUninstaller"
   QMAppLoginItemManage:
@@ -154,24 +200,34 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  LemonBigOldFile: a07cc1b63a02a3798dd4695084ef4ada9c98dc20
-  LemonDuplicateFile: 07356a541fe41e1ca2673d8df48a2cd00dc5b9ff
-  LemonFileManager: 34e8907a876162f04ae7cc1ccaaf762d262ca604
-  LemonFileMove: 3d9fed730fab0a26a97b432d6f9c203fbded169a
-  LemonHardware: 61f33e9187c0f1b630cf657e3b0ac7c61a420c78
-  LemonLoginItemManager: 51ea13aff020ebb82ef5f76859fc154b6196b808
-  LemonNetSpeed: 3f86794e238cefad6b12c4b10c00771707f695dc
-  LemonPhotoClean: b612767f6390905383ccce0409b5818e365292b9
-  LemonPrivacyClean: d08bd618403267818421f052a25ec78ac8f0871c
-  LemonSpaceAnalyse: b4bd7bc9d709c36b5c96c41d551e9a7fe720a22d
+  LemonAppResidualCleaner: 75cda9e1137eed2e3fb22a89c38e3f3c9feec990
+  LemonBigFileCleaner: dc5cb36c818d03be5894826c7136645b9ccd2cd3
+  LemonBigOldFile: 33b43e287e66df9b27d91a00a52b759506ffe2a4
+  LemonCacheCleaner: 1a4074eaf1e0b4ac0b838563400b482ab4101922
+  LemonDisk3DAnalyzer: d2172b77fc455a1e3bf6ac09795f02c160e95a95
+  LemonDuplicateFile: 58b8a7fcd54d1f56c2cd818ea06bcf67d4d1dd85
+  LemonDuplicateFileCleaner: 13ef497d4f7d45487098cd6307f8abc56de9d718
+  LemonFileManager: 2837545ea76cd9d8dac11268726b88c1431936e7
+  LemonFileMove: 4d873b4a25b37540fea299a3f28a18b8118cc420
+  LemonHardware: 29918cf8bc03b78c7beae0a7d80c3569622b6cd2
+  LemonLogCleaner: 11f2681fb4e95c11f74b51e4ec15169418bcc5d9
+  LemonLoginItemManager: 59fa198f34a3f720e0e9cb47337b5e9f5d8634fa
+  LemonLoginItemOptimizer: ed1b38056a18aa917494e4a33f7cba53bcd53f35
+  LemonMemoryOptimize: 41f39b529e41aec79371c3c34abcd0c219f7844f
+  LemonNetSpeed: b91fc4dd1c065692c4c7499880ae6168fbe26d64
+  LemonPhotoClean: c23120d4da4612773aea034652a7f48ce5bb40ec
+  LemonPrivacyClean: 17da4568542ea74fc35498783ecc015aa31eec5f
+  LemonSpaceAnalyse: f551b4aac51dc7cb53ab83ffdb21941995670036
   LemonStat: ef56b4f1d8f30ef8f168aaecb905baa2691c20c9
-  LemonUninstaller: f509163d603c5d00cc8bb5371d6edacb2229074f
+  LemonSystemCleaner: 88ff10261272d97ffdf0c739436ccac8e43cca89
+  LemonTempFileCleaner: 726091d618c44b49deaa96e909babb80f3815e45
+  LemonUninstaller: 7aa0c53c9185c1a2b4a918d8fed6fb52955fe5e6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   QMAppLoginItemManage: 39466a767ec150dabb85f44cd2c2c3e23e82fd3d
-  QMCoreFunction: 686bae67448abfec08d273a7ce8896589683d5fb
-  QMUICommon: e2f5520cce7e70c46b2297294d7656a30b8e0c4f
+  QMCoreFunction: 1a031b1f1ca8888d3521d254e4fc47c62b95162a
+  QMUICommon: c38f28f16bcc8516facbecae343bf5b71e9ce585
   YMTreeMap: 8bd766573bc5005cf6b6f5d2674e4225ee734f6e
 
-PODFILE CHECKSUM: b292f7a1144b480a701210a18ac47a2fb090b57d
+PODFILE CHECKSUM: 564f3f53bb1bc1e49ad09c1061395c0ef0933573
 
 COCOAPODS: 1.16.2

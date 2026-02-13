@@ -24,17 +24,11 @@
   ],
   "public_header_files": "Pod/Classes/LMFileMoveWnController.h",
   "dependencies": {
-    "QMCoreFunction": [
-
-    ],
+    "QMCoreFunction": [],
     "Masonry": [
       "1.1.0"
     ],
-    "QMUICommon": [
-
-    ],
-    "LemonFileManager": [
-
-    ]
+    "QMUICommon": [],
+    "LemonFileManager": []
   }
 }

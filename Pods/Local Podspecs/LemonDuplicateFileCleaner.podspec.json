@@ -1,0 +1,26 @@
+{
+  "name": "LemonDuplicateFileCleaner",
+  "version": "1.0.0",
+  "summary": "Duplicate file cleaner for Tencent Lemon Cleaner",
+  "description": "A powerful duplicate file cleaner module for Tencent Lemon Cleaner, \nwhich can scan, analyze and safely delete duplicate files on macOS.",
+  "homepage": "https://github.com/Tencent/Lemon-Cleaner",
+  "license": {
+    "type": "GPL v3",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tencent": "support@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.10"
+  },
+  "source": {
+    "git": "https://github.com/Tencent/Lemon-Cleaner.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "LemonDuplicateFileCleaner/Classes/**/*",
+  "public_header_files": "LemonDuplicateFileCleaner/Classes/**/*.h",
+  "frameworks": "Foundation",
+  "libraries": "CommonCrypto",
+  "requires_arc": true
+}

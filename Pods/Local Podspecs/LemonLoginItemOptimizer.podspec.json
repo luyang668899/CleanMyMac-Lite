@@ -1,0 +1,23 @@
+{
+  "name": "LemonLoginItemOptimizer",
+  "version": "0.1.0",
+  "summary": "启动项智能排序优化模块",
+  "description": "启动项智能排序优化模块，提供启动项分析、优化排序、延迟启动等功能",
+  "homepage": "https://lemon.qq.com",
+  "license": "GPL",
+  "authors": {
+    "Tencent": "lemon@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "LemonLoginItemOptimizer/Classes/**/*",
+  "frameworks": "Foundation",
+  "dependencies": {
+    "QMAppLoginItemManage": [],
+    "QMCoreFunction": []
+  }
+}

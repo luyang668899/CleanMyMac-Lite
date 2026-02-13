@@ -1,0 +1,6 @@
+framework module LemonTempFileCleaner {
+  umbrella header "LemonTempFileCleaner-umbrella.h"
+
+  export *
+  module * { export * }
+}

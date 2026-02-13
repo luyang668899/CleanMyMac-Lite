@@ -27,15 +27,11 @@
     "AFNetworking": [
       "3.2.1"
     ],
-    "QMCoreFunction": [
-
-    ],
+    "QMCoreFunction": [],
     "Masonry": [
       "1.1.0"
     ],
-    "QMUICommon": [
-
-    ],
+    "QMUICommon": [],
     "YMTreeMap": [
       "1.2.0"
     ]

@@ -1,0 +1,6 @@
+framework module LemonLogCleaner {
+  umbrella header "LemonLogCleaner-umbrella.h"
+
+  export *
+  module * { export * }
+}

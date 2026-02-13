@@ -1,6 +1,6 @@
 # Contributing
 
-欢迎使用Lemon Cleaner，本文档是有关如何为Lemon Cleaner做出贡献的指南。 如果发现不正确或缺失的内容，请留下评论/建议。如果您有好的意见或建议，欢迎创建Issues或pull Requests，为开源社区贡献力量。
+欢迎使用CleanMyMac Lite，本文档是有关如何为CleanMyMac Lite做出贡献的指南。 如果发现不正确或缺失的内容，请留下评论/建议。如果您有好的意见或建议，欢迎创建Issues或pull Requests，为开源社区贡献力量。
 
 ## Issue
 如果您发现新的Bug、想要新功能或提出建议，您可以在GitHub上Issue，请按照Issue模板中的准则进行操作。提交问题之前，请确保满足以下条件：

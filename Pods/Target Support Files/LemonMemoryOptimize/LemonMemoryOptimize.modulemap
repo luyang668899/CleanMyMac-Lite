@@ -1,0 +1,6 @@
+framework module LemonMemoryOptimize {
+  umbrella header "LemonMemoryOptimize-umbrella.h"
+
+  export *
+  module * { export * }
+}

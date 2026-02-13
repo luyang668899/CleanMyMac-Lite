@@ -33,11 +33,7 @@
     "FMDB": [
       "2.7.5"
     ],
-    "QMCoreFunction": [
-
-    ],
-    "QMUICommon": [
-
-    ]
+    "QMCoreFunction": [],
+    "QMUICommon": []
   }
 }

@@ -25,9 +25,7 @@
     "QMCoreFunction/Classes/**/**/*.h"
   ],
   "dependencies": {
-    "LemonStat": [
-
-    ],
+    "LemonStat": [],
     "AFNetworking": [
       "3.2.1"
     ]

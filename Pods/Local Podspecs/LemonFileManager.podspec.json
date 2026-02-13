@@ -21,8 +21,6 @@
   "source_files": "LemonFileManager/Classes/**/*",
   "public_header_files": "LemonFileManager/Classes/**/*.h",
   "dependencies": {
-    "QMCoreFunction": [
-
-    ]
+    "QMCoreFunction": []
   }
 }

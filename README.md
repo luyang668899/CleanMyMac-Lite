@@ -1,9 +1,9 @@
-![Lemon](Resource/lemon_banner.png)
+![CleanMyMac Lite](Resource/lemon_banner.png)
 
 ## 项目简介
-针对中国用户习惯性清理的特点，打造了腾讯柠檬清理，系统性解决macOS设备空间问题。重点聚焦清理功能，对上百款软件提供定制化的清理方案，提供专业的清理建议，帮助用户轻松完成一键式的清理。另外还提供相似照片清理、大文件清理、隐私清理、应用卸载和开机启动项保护等功能，帮助用户多维度的管理自己的电脑。整体设计上清新简洁，状态栏小巧好用，是一款Mac设备必备的实用工具。
+CleanMyMac Lite是一款功能强大的macOS系统清理与优化工具，系统性解决Mac设备空间问题。重点聚焦清理功能，对上百款软件提供定制化的清理方案，提供专业的清理建议，帮助用户轻松完成一键式的清理。另外还提供相似照片清理、大文件清理、隐私清理、应用卸载和开机启动项管理等功能，帮助用户多维度的管理自己的电脑。整体设计上清新简洁，状态栏小巧好用，是一款Mac设备必备的实用工具。
 
-<img src="Resource/lemon_app.png" alt="lemon_app" style="zoom:80%;" />
+<img src="Resource/lemon_app.png" alt="cleanmymac_lite_app" style="zoom:80%;" />
 
 ## 功能亮点
 
@@ -19,7 +19,7 @@
 
 
 ## 技术模块
-- Lemon：主工程。
+- CleanMyMac Lite：主工程。
 - LemonMonitor：状态栏。
 - LemonBigOldFile：用于大文件清理。
 - LemonDuplicateFile：用于重复文件清理。
@@ -32,6 +32,40 @@
 - LemonHardware：用于硬件信息获取。
 - LemonNetSpeed：用于网络测速。
 - LemonCleaner：用于实际清理操作。
+
+## 技术框架
+
+### 第三方框架
+- **AFNetworking** (3.2.1) - 网络请求框架
+- **Masonry** (1.1.0) - 自动布局框架
+- **FMDB** (2.7.5) - SQLite数据库框架
+
+### 本地框架
+- **QMUICommon** - UI通用组件
+- **QMCoreFunction** - 核心功能
+- **LemonFileManager** - 文件管理
+- **LemonMemoryOptimize** - 内存优化
+- **LemonLoginItemOptimizer** - 登录项优化
+- **LemonDisk3DAnalyzer** - 磁盘3D分析
+- **LemonSystemCleaner** - 系统清理
+- **LemonBigFileCleaner** - 大文件清理
+- **LemonDuplicateFileCleaner** - 重复文件清理
+- **LemonCacheCleaner** - 缓存清理
+- **LemonLogCleaner** - 日志清理
+- **LemonTempFileCleaner** - 临时文件清理
+- **LemonAppResidualCleaner** - 应用残留清理
+- **QMAppLoginItemManage** - 登录项管理
+- **LemonSpaceAnalyse** - 空间分析
+- **LemonBigOldFile** - 大旧文件
+- **LemonPhotoClean** - 照片清理
+- **LemonDuplicateFile** - 重复文件
+- **LemonPrivacyClean** - 隐私清理
+- **LemonUninstaller** - 应用卸载
+- **LemonLoginItemManager** - 登录项管理
+- **LemonFileMove** - 文件移动
+- **LemonStat** - 统计
+- **LemonHardware** - 硬件信息
+- **LemonNetSpeed** - 网络速度
 
 
 ## 贡献
@@ -52,16 +86,16 @@
 
 
 ## License
-Lemon Cleaner uses 2 different licenses :
+CleanMyMac Lite uses 2 different licenses :
 
 - the files in the LemonDaemon module use a GPL v2 license
-- all other files in the Lemon Monitor and Lemon Cleaner use a GPL v3 license, unless explicitly stated otherwise
+- all other files in the Lemon Monitor and CleanMyMac Lite use a GPL v3 license, unless explicitly stated otherwise
 
 The files in LemonDaemon module is licensed under the GNU General Public License, version 2 except for the third-party components as listed in the license text for LemonDaemon.
 
-The files in modules Lemon Monitor and Lemon Cleaner are licensed under the GNU General Public License, version 3 except for the third-party components as listed in the license text for Lemon Monitor and Lemon Cleaner.
+The files in modules Lemon Monitor and CleanMyMac Lite are licensed under the GNU General Public License, version 3 except for the third-party components as listed in the license text for Lemon Monitor and CleanMyMac Lite.
 
 
 ## 官网
-[腾讯柠檬清理](https://lemon.qq.com)
+[CleanMyMac Lite](https://cleanmymac-lite.com)
 

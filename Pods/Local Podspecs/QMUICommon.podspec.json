@@ -33,9 +33,7 @@
     "QMUICommon/Assets/en.lproj/Localizable.strings"
   ],
   "dependencies": {
-    "QMCoreFunction": [
-
-    ],
+    "QMCoreFunction": [],
     "Masonry": [
       "1.1.0"
     ]

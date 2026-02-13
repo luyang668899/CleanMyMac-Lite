@@ -20,6 +20,16 @@ def available_pods
     pod 'Masonry', '= 1.1.0'
     pod 'FMDB', '= 2.7.5'
     pod 'LemonFileManager',:path => './localPod/LemonFileManager'
+    pod 'LemonMemoryOptimize',:path => './localPod/LemonMemoryOptimize'
+    pod 'LemonLoginItemOptimizer',:path => './localPod/LemonLoginItemOptimizer'
+    pod 'LemonDisk3DAnalyzer',:path => './localPod/LemonDisk3DAnalyzer'
+    pod 'LemonSystemCleaner',:path => './localPod/LemonSystemCleaner'
+    pod 'LemonBigFileCleaner',:path => './localPod/LemonBigFileCleaner'
+    pod 'LemonDuplicateFileCleaner',:path => './localPod/LemonDuplicateFileCleaner'
+    pod 'LemonCacheCleaner',:path => './localPod/LemonCacheCleaner'
+    pod 'LemonLogCleaner',:path => './localPod/LemonLogCleaner'
+    pod 'LemonTempFileCleaner',:path => './localPod/LemonTempFileCleaner'
+    pod 'LemonAppResidualCleaner',:path => './localPod/LemonAppResidualCleaner'
 end
 target 'Lemon' do
    use_frameworks!

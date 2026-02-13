@@ -1,0 +1,6 @@
+framework module LemonCacheCleaner {
+  umbrella header "LemonCacheCleaner-umbrella.h"
+
+  export *
+  module * { export * }
+}

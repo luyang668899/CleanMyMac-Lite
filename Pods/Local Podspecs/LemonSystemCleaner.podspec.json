@@ -1,0 +1,22 @@
+{
+  "name": "LemonSystemCleaner",
+  "version": "0.1.0",
+  "summary": "系统数据安全清理模块",
+  "description": "系统数据安全清理模块，专注于安全清理系统数据而不损坏系统文件",
+  "homepage": "https://lemon.qq.com",
+  "license": "GPL",
+  "authors": {
+    "Tencent": "lemon@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "LemonSystemCleaner/Classes/**/*",
+  "frameworks": "Foundation",
+  "dependencies": {
+    "QMCoreFunction": []
+  }
+}

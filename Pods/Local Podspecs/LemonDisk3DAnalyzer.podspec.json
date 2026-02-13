@@ -1,0 +1,26 @@
+{
+  "name": "LemonDisk3DAnalyzer",
+  "version": "0.1.0",
+  "summary": "3D磁盘空间分析模块",
+  "description": "3D磁盘空间分析模块，提供磁盘空间的3D可视化展示和分析功能",
+  "homepage": "https://lemon.qq.com",
+  "license": "GPL",
+  "authors": {
+    "Tencent": "lemon@tencent.com"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "LemonDisk3DAnalyzer/Classes/**/*",
+  "frameworks": [
+    "Foundation",
+    "SceneKit",
+    "AppKit"
+  ],
+  "dependencies": {
+    "QMCoreFunction": []
+  }
+}

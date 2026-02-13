@@ -1,0 +1,25 @@
+{
+  "name": "LemonAppResidualCleaner",
+  "version": "1.0.0",
+  "summary": "Application uninstallation residual cleaner for macOS",
+  "description": "A powerful application residual cleaner module for Tencent Lemon, designed to safely scan and remove residual files from uninstalled applications on macOS systems.",
+  "homepage": "https://github.com/Tencent/Lemon",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tencent": "lemon@tencent.com"
+  },
+  "source": {
+    "git": "https://github.com/Tencent/Lemon.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source_files": "LemonAppResidualCleaner/Classes/**/*",
+  "public_header_files": "LemonAppResidualCleaner/Classes/**/*.h",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}

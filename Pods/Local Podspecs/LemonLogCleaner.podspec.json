@@ -1,0 +1,25 @@
+{
+  "name": "LemonLogCleaner",
+  "version": "1.0.0",
+  "summary": "Log file cleaner for macOS",
+  "description": "A powerful log file cleaner module for Tencent Lemon, designed to safely scan and remove log files from macOS systems.",
+  "homepage": "https://github.com/Tencent/Lemon",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tencent": "lemon@tencent.com"
+  },
+  "source": {
+    "git": "https://github.com/Tencent/Lemon.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "osx": "10.11"
+  },
+  "source_files": "LemonLogCleaner/Classes/**/*",
+  "public_header_files": "LemonLogCleaner/Classes/**/*.h",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}
